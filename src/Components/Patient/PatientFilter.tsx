@@ -519,6 +519,7 @@ export default function PatientFilter(props: any) {
               end: getDate(filterState.created_date_before),
             }}
             onChange={handleDateRangeChange}
+            closeOnSelect
             errorClassName="hidden"
           />
           <DateRangeFormField
@@ -529,7 +530,8 @@ export default function PatientFilter(props: any) {
               start: getDate(filterState.modified_date_after),
               end: getDate(filterState.modified_date_before),
             }}
-            onChange={handleDateRangeChange}
+            onChange={handleDateRangeChange}                
+            closeOnSelect
             errorClassName="hidden"
           />
           <DateRangeFormField
@@ -543,6 +545,7 @@ export default function PatientFilter(props: any) {
               end: getDate(filterState.last_consultation_admission_date_before),
             }}
             onChange={handleDateRangeChange}
+            closeOnSelect
             errorClassName="hidden"
           />
           <DateRangeFormField
@@ -556,6 +559,7 @@ export default function PatientFilter(props: any) {
               end: getDate(filterState.last_consultation_discharge_date_before),
             }}
             onChange={handleDateRangeChange}
+            closeOnSelect 
             errorClassName="hidden"
           />
           <DateRangeFormField
